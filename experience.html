@@ -2,9 +2,155 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fixed Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .container2 {
+        display: flex;
+        gap: 20px;
+        }
+    .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: fill;
+            margin-bottom: 15px;
+            margin-top: 30px;
+    }
+    .section-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #333;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+    .card {
+        transition: 0.3s;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .list-group-item {
+        background: #f8f9fa;
+        border: none;
+        font-size: 1.1rem;
+    }
+    footer {
+        font-size: 1rem;
+        color: #666;
+    }
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+
+  </style>
 </head>
 <body>
-hello
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Resume</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="experience.html">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-5 ">
+  <div style="display: flex; align-items: center;">
+        <img src="img.jpeg" alt="Profile Picture" class="profile-img me-2 " width="40">
+        <header class="border-bottom pb-3">
+            <h1 class="text-primary">Amr Abdallah</h1>
+            <p class="text-muted">BI Developer | Data Engineer | Pythoneer</p>
+        </header>
+    </div>
+
+
+
+        <section id="experience" class="my-4">
+            <h2 class="section-title">Experience 💻</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">Business Intelligence Developer Section Head</h3>
+                    <h6 class="card-subtitle text-muted">Nexus | 2022 - Present</h6>
+                    <br>
+                    <ul>
+                    <p class="card-text">
+                        <li>Designing, developing, and deploying business intelligence solutions.</li>
+                        <li>Includes building data models, reports, dashboards, and performing ETL (Extract, Transform, Load)
+                        operations to support data-driven decision-making across the organization.</li>
+                        </p>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">Senior Data Analyst</h3>
+                    <h6 class="card-subtitle text-muted">Genena Group | 2019 - 2022</h6>
+                    <br>
+                    <p class="card-text">
+                        <ul>
+                        <li>Create Financial Power BI Reports for the Owner & CEO.</li>
+                        <li>Create SSRS reports for direct managers.</li>
+                        <li>Implement power bi software.</li>
+                        <li>create all financial measures & KPI's.</li>
+                        <li>Measure the re-order Point, Maximum & Minimum & Turn Over Rate.</li>
+                        <li>Measure the stock cost and the balanced point.</li>
+                        <li>Calculate the Cost saving Report & R.O.I K.P.I's.</li>
+                        <li>Price Analysis Report & Market Price S.T.D.V.</li>
+                        <li>Generate New Codes & systematically designed.</li>
+                        <li>Inventory control Reports</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">Business intelligence Analyst</h3>
+                    <h6 class="card-subtitle text-muted">Roads and Transport Authority | 2017 - 2019</h6>
+                    <br>
+                    <p class="card-text">
+                        <ul>
+                        <li>Issue orders on GP System to be directed to its related suppliers.</li>
+                        <li>Prepare orders related labels, import permits and storing letters.</li>
+                        <li>Negotiate best freight offers among various freight forwarders.</li>
+                        <li>Follow orders production status and shipping details.</li>
+                        <li>Inspect and verify all shipping documents for accuracy and problems.</li>
+                        <li>Work in cooperation with the finance team for settling all suppliers related payments.</li>
+                        <li>Finalize orders bank documents (IDC) to be handed to customs agents.</li>
+                        <li>Monitor shipments clearance process till final release is received.</li>
+                        <li>Creating all requested reports from SQL server using SSAS & SSIS.</li>
+                        <li>Implement dashboards for the director board.</p></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center border-top pt-3 mt-4">
+            <p class="text-muted">Contact: Amrselim1989@gmail.com | LinkedIn: <a href="https://www.linkedin.com/in/amrabdullah89/">linkedin.com/in/amrabdullah89</a></p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
