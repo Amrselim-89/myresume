@@ -35,3 +35,7 @@ console.log(_name)
 _name.addEventListener('mouseover',function(){
 _name.style.fontSize = "45px";
 })
+
+_name.addEventListener('mouseout',function(){
+  _name.style.fontSize = "40px";
+  })
