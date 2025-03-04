@@ -26,7 +26,7 @@ function getRandomColor() {
     header.font
   }
 
-setInterval("changejobtitlecolor()",500)
+//setInterval("changejobtitlecolor()",500)
 
 
 var _name  = document.querySelector("#hover")
@@ -39,3 +39,16 @@ _name.style.fontSize = "45px";
 _name.addEventListener('mouseout',function(){
   _name.style.fontSize = "40px";
   })
+
+function addFrame() {
+let img = document.querySelector("#im");
+img.style.border = "5px solid";  // Adds a black border as a frame
+img.style.borderColor  = getRandomColor();
+img.style.padding = "0px";             // Adds padding for spacing
+img.style.borderRadius = "100px";        // Optional: Rounds the corners
+console.log(document.querySelector("#im"))
+}
+
+
+
+setInterval("addFrame()",500)
