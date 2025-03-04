@@ -27,3 +27,11 @@ function getRandomColor() {
   }
 
 setInterval("changejobtitlecolor()",500)
+
+
+var _name  = document.querySelector("#hover")
+console.log(_name)
+
+_name.addEventListener('mouseover',function(){
+_name.style.fontSize = "45px";
+})
